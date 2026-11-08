@@ -1,0 +1,6 @@
+.tools/
+*.b64.txt
+__pycache__/
+*.tmp
+.DS_Store
+Thumbs.db

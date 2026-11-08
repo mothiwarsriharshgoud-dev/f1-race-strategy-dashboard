@@ -1,0 +1,9 @@
+race,lap,attacking_driver,defending_driver,tactic,pre_gap_sec,outlap_delta_sec,post_gap_sec,outcome,compound_fitted,delta_tyre_age
+Hungarian GP 2024,18,PIA,NOR,Undercut,1.4,-1.85,-0.45,Success (Position Gained),HARD,-3
+Miami GP 2024,29,NOR,VER,Overcut + SC,11.2,-14.6,-3.4,Success (Race Win),HARD,12
+Italian GP 2024 (Monza),38,LEC,PIA,1-Stop Tire Conservation,5.8,21.4,-2.66,Success (Race Win vs 2-stop),HARD,22
+British GP 2024,39,HAM,NOR,Undercut Crossover,2.2,-3.1,-0.9,Success (Position Gained),SOFT,-1
+Spanish GP 2024,16,VER,RUS,Pace Offset Overcut,0.8,-2.1,-1.3,Success (Dominant Pace),MEDIUM,2
+Belgian GP 2024,31,RUS,HAM,1-Stop Gamble,8.5,21.0,-0.52,Track Position Defense (Physical Finish P1),HARD,18
+Singapore GP 2024,26,LEC,RUS,Overcut Extension,3.4,-1.2,-0.8,Success (Late Race Tire Delta),HARD,11
+United States GP 2024,25,SAI,VER,Undercut,1.6,-2.4,-0.8,Success (Position Gained),HARD,-4

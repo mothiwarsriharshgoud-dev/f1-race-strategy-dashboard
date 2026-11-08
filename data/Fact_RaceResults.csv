@@ -1,0 +1,17 @@
+race,driver,team,grid,finish,pos_change,points,stops,strategy
+Bahrain GP,VER,Red Bull,1,1,0,26,2,Soft-Hard-Soft
+Bahrain GP,PER,Red Bull,5,2,3,18,2,Soft-Hard-Soft
+Bahrain GP,SAI,Ferrari,4,3,1,15,2,Soft-Hard-Hard
+Bahrain GP,LEC,Ferrari,2,4,-2,12,2,Soft-Hard-Hard
+Bahrain GP,RUS,Mercedes,3,5,-2,10,2,Soft-Hard-Hard
+Bahrain GP,NOR,McLaren,7,6,1,8,2,Soft-Hard-Hard
+Bahrain GP,HAM,Mercedes,9,7,2,6,2,Soft-Hard-Hard
+Bahrain GP,PIA,McLaren,8,8,0,4,2,Soft-Hard-Hard
+Bahrain GP,ALO,Aston Martin,6,9,-3,2,2,Soft-Hard-Hard
+Bahrain GP,STR,Aston Martin,12,10,2,1,2,Soft-Hard-Hard
+Miami GP,NOR,McLaren,5,1,4,25,1,Medium-Hard (SC Overcut)
+Miami GP,VER,Red Bull,1,2,-1,18,1,Medium-Hard
+Miami GP,LEC,Ferrari,2,3,-1,15,1,Medium-Hard
+Monza GP,LEC,Ferrari,4,1,3,25,1,Medium-Hard (1-Stop Masterclass)
+Monza GP,PIA,McLaren,2,2,0,18,2,Medium-Hard-Hard (2-Stop Defeated)
+Monza GP,NOR,McLaren,1,3,-2,16,2,Medium-Hard-Hard
