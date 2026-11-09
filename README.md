@@ -5,62 +5,47 @@ An interactive, high-performance Formula 1 race strategy and telemetry platform 
 
 ---
 
-## 📁 Project Structure
+## 👥 Project Team
+* **Sri Harsh** &bull; `2503a52740`
+* **Manohar** &bull; `2503a52766`
+* **Jayavardhan** &bull; `2503a52747`
 
-```
-C:\Users\Main User\.gemini\antigravity\scratch\f1-race-strategy-dashboard/
-├── data/
-│   ├── circuits.csv                 # 77 Formula 1 circuits with lat, lng, altitude, location
-│   ├── races.csv                    # Complete historical F1 races calendar
-│   └── f1_strategy_dataset.json      # Structured telemetry, degradation slopes & strategic KPIs
-├── index.html                       # Complete, self-contained interactive web dashboard
-├── generate_f1_strategy_data.py      # Python data engineering & telemetry synthesis script
-├── build_dashboard_html.py          # Dashboard builder script
-└── README.md                        # Documentation & project guide
-```
+---
+
+## 🌐 Live Web & Dashboard Link
+* **GitHub Pages Web App**: [https://mothiwarsriharshgoud-dev.github.io/f1-race-strategy-dashboard/](https://mothiwarsriharshgoud-dev.github.io/f1-race-strategy-dashboard/)
+* **GitHub Repository**: [https://github.com/mothiwarsriharshgoud-dev/f1-race-strategy-dashboard](https://github.com/mothiwarsriharshgoud-dev/f1-race-strategy-dashboard)
 
 ---
 
 ## 🌟 Core Features & Modules
 
-### 1. Lap Pace & Telemetry HUD
-- **Interactive Multi-Driver Telemetry**: Compare lap times for Verstappen, Norris, Leclerc, Russell, Sainz, Hamilton, and Piastri.
-- **Dynamic 3-Lap Smoothing**: Toggle between raw telemetry noisy traces and moving averages to filter traffic perturbations.
-- **Cumulative Gap-to-Leader**: Trace exact time deltas (s) relative to the race leader.
-- **Driver Stint Gantt Timeline**: Horizontal color-coded compound stints (Soft `#E10600`, Medium `#FFF200`, Hard `#FFFFFF`) highlighting pit in/out laps.
+### 1. Multi-Track & Multi-Dimensional Strategy Engine
+- **Track Profiles (77 Circuits)**: Distinct degradation rates, pit transit deltas, and stop counts (Monaco 78 laps 1-stop vs. Bahrain 57 laps 2-stop vs. Lusail Qatar 57 laps mandatory 3-stop).
+- **Grid Position Adaptation**: Strategies dynamically re-tailor for Front Row (P1-P2 clean air defense), Upper Hunters (P3-P6 early undercut strike), Midfield (P7-P12 traffic window split), and Back of Grid (P13-P20 radical reverse hard stint).
+- **Live Safety Car / VSC Simulation Console**: Real-time +12.6s Free Pit Stop Dividend calculation, deployment lap scrubber, and automatic tactical plan re-optimization.
 
-### 2. Tire Degradation & Wear Modeling
-- **Tyre Life vs. Lap Time Scatter & Linear Regression**: Empirical degradation rates ($\text{s/lap}$) per Pirelli compound.
-- **Fuel-Burn Mass Correction Toggle**: Adjusts for the $-0.062\text{ s/lap}$ car lightening effect as fuel burns off to isolate genuine rubber degradation from vehicle weight dynamics.
-- **The Thermal Cliff**: Explains and visualizes the critical crossover point where tire wear spikes and forces a pit stop.
+### 2. 2024 F1 Race Car CAD Platform
+- High-fidelity 3D aerodynamic platform with 5 inspection hotspots (Front Wing, 18" BBS Wheels, Halo structure, Underfloor Venturi tunnels, and Rear Wing DRS Actuator).
+- Interactive DRS flap control triggering live Drag ($C_d$) reduction from 0.88 to 0.63 and straight-line top speed boost to 352 km/h.
 
-### 3. Pit Stop & Undercut Dynamics
-- **Undercut Success Rate (68.4%)**: Explores out-lap deltas and compound warmup advantages.
-- **Virtual Safety Car & Safety Car Arbitrage**: Visualizes the $+9.4\text{s}$ to $+12.0\text{s}$ pit transit dividend under race neutralizations.
-- **Real-World 2024 Case Studies**: Highlights key tactical battles (Hungarian GP, Miami GP, Monza 1-stop masterclass, Belgian GP, Spanish GP).
+### 3. Lap Pace & Telemetry HUD
+- Compare high-frequency lap times across Verstappen, Norris, Leclerc, Russell, Sainz, and Hamilton.
+- Dynamic moving average smoothing to filter out traffic perturbations.
+- Scaled Driver Stint Gantt timeline with caution intervention markers.
 
-### 4. Global Circuit Strategy Atlas (77 Tracks)
-- Complete database of all 77 historical and active circuits from the provided dataset.
-- Filters for **High Altitude (>200m)** vs. **Sea Level (<50m)** circuits, analyzing how atmospheric density impacts aerodynamic sliding and tire graining.
-- Strategic profiles: Pit lane time loss, tire stress index, and typical 1-stop vs. 2-stop allocations.
-
-### 5. Live Race Strategy Simulator (What-If Calculator)
-- Configure initial compound, stint lengths, pit stop laps, track temperature, and Safety Car deployment.
-- Real-time simulation engine calculates total race time, pit loss penalties, and thermal cliff costs, predicting the final finishing position against the real winning benchmark.
+### 4. Tire Degradation & Exponential Thermal Cliff
+- Empirical compound degradation rates ($+0.082\text{ s/lap}$ Soft vs. $+0.052\text{ s/lap}$ Medium vs. $+0.028\text{ s/lap}$ Hard).
+- Fuel burn mass compensation toggle ($ -0.062\text{ s/lap}$ vehicle lightening).
+- Non-linear thermal cliff curve visualization ($D(t) = D_{\text{base}} + \beta t + \gamma e^{t - L_{\text{cliff}}}$).
 
 ---
 
-## 🚀 How to Open and Use the Dashboard
+## 🚀 How to Run Locally
 
 ### In Any Web Browser:
-Simply double-click or open `index.html` located at:
-```
-C:\Users\Main User\.gemini\antigravity\scratch\f1-race-strategy-dashboard\index.html
-```
-
-Or open it via command line:
+Open `index.html` located at:
 ```powershell
 Start-Process "C:\Users\Main User\.gemini\antigravity\scratch\f1-race-strategy-dashboard\index.html"
 ```
-
-The application is completely self-contained with zero external CDN dependencies, ensuring instant, offline-capable rendering.
+The application is self-contained with embedded telemetry data, ensuring instant offline rendering.
